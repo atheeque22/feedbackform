@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        body{
+            background:url(back.jpg) ;
+        }
+        form label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: red; 
+        }
+        div#yesno{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        div#rate{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button#submit{
+            display: inline;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color:rgb(51, 156, 232)
+        }
+        div#but{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            font-size: 15;
+            
+            
+
+        }
+        #Required-fields{
+            width: 700px;
+            background-color: rgb(146, 197, 205);
+            border-radius: 10px;
+        }
+        #form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #improvements,#requests,#name,#email,#updates{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <button>Profile</button>
+        </nav>
+    </header>
+    <section id="main">
+    
+    <form id="form">
+        <fieldset id="Required-fields">
+            <h1>Feedback form</h1>
+            <h3>Required fields*</h3>
+
+            <label for="name">*Enter you name:
+                <input type="text" name="name" id="name" placeholder="Enter name here">
+            </label>
+            <label for="email">*Enter you email:
+                <input type="email" name="email" id="email" placeholder="Enter email here">
+            </label>
+            <p>Is this your first time visting</p>
+            <div id="yesno">
+                <label for="yes">Yes
+                    <input type="radio" name="yes" id="yes" >
+                </label>
+                <label for="no">No
+                    <input type="radio" name="no" id="no" >
+                </label>
+            </div>
+            <p>Was this website informative and easy to navigate through</p>
+            <div id="yesno">
+                <label for="yes">Yes
+                    <input type="radio" name="yes" id="yes" >
+                </label>
+                <label for="no">No
+                    <input type="radio" name="no" id="no" >
+                </label>
+            </div>
+            <p>*If 'No', suggest any inmprovements for the future</p>
+            <label for="inmprovements">
+                <textarea name="inmprovements" id="improvements" rows="4" cols="30"> Please add your message here
+                </textarea>
+            </label>
+            <p>How satisfied are you with Our services? Chose from 0 to 10, with 1 being "Not satisfied at all! " and 10 being "Extremely satisfied!"</p>
+            <div id="rate">
+                <label for="1">1
+                    <input type="radio" name="1" id="1" >
+                </label>
+                <label for="2">2
+                    <input type="radio" name="2" id="2" >
+                </label>
+                <label for="3">3
+                    <input type="radio" name="3" id="3" >
+                </label>
+                <label for="4">4
+                    <input type="radio" name="4" id="4" >
+                </label>
+                <label for="5">5
+                    <input type="radio" name="5" id="5" >
+                </label>
+                <label for="6">6
+                    <input type="radio" name="6" id="6" >
+                </label>
+                <label for="7">7
+                    <input type="radio" name="7" id="7" >
+                </label>
+                <label for="8">8
+                    <input type="radio" name="8" id="8" >
+                </label>
+                <label for="9">9
+                    <input type="radio" name="9" id="9" >
+                </label>
+                <label for="10">10
+                    <input type="radio" name="10" id="10" >
+                </label>    
+            </div>
+            <p>Would you recommend our services</p>
+            <div id="yesno">
+                <label for="yes">Yes
+                    <input type="radio" name="yes" id="yes" >
+                </label>
+                <label for="no">No
+                    <input type="radio" name="no" id="no" >
+                </label>
+            </div>
+            <p>*Would you like to recieve updates about the website and any offers?</p>
+            <label for="updates">
+                <select name="updates" id="updates">
+                    <option value="yes">Yes - via email</option> 
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <p>Do you have any additional questions or requests</p>
+            <label for="requests">
+                <textarea name="requests" id="requests" rows="5" cols="30"> Please add your message here
+                </textarea>
+            </label>
+            <div id="but">
+            <button id="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    </section>
+</body>
+</html>
